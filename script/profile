@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 function profile {
-  local shome="${_minimal_block_home:-"$(cd -P -- "$(dirname -- "$BASH_SOURCE")/.." && pwd -P)"}"
+  local shome="${_normalize_home:-"$(cd -P -- "$(dirname -- "$BASH_SOURCE")/.." && pwd -P)"}"
   PATH="$shome/exec:$PATH"
 }
 
