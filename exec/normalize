@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+
+set -efu
+
+unset cd
+unset pushd
+unset popd
+
+unset CDPATH
