@@ -7,3 +7,5 @@ unset pushd
 unset popd
 
 unset CDPATH
+
+umask 022
