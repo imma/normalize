@@ -9,3 +9,7 @@ unset popd
 unset CDPATH
 
 umask 022
+
+if [[ -n "${DEBUG:-}" || -n "${debug:-}" ]]; then
+  set -x
+fi
